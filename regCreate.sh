@@ -16,9 +16,9 @@
 
 # Set Variables
 AGENTBINPATH="/opt/vmware/iotc-agent/bin/"
-TEMPLATE=KO-Master-Gateway-Template
-GATEWAY=KO-vGateway-Ubuntu-001
-PULSEINSTANCE=iotc003.vmware.com
+TEMPLATE=Master-Gateway-Template
+GATEWAY=UbuntuVM-Gateway-001
+PULSEINSTANCE=iotc009.vmware.com
 SERIAL=12345
 
 
@@ -34,7 +34,7 @@ APIVersion=$(curl --request GET \
 | awk -F ':' '{print $2'} | awk -F ',' '{print $1}' | sed -e 's/"//g')
 
 # Use Basic Auth to retrieve Bearer Token
-BearerToken=$(curl --user ausworkshop@iotken.com:VMware1! --request GET \
+BearerToken=$(curl --user workshop.ken.osborn:Superm@n1000 --request GET \
 --url https://$PULSEINSTANCE:443/api/tokens \
 --header "Accept: application/json;api-version=$APIVersion" \
 --header 'Cache-Control: no-cache' \
