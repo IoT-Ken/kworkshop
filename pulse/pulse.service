@@ -1,0 +1,15 @@
+[Unit]
+Description=Pulse
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=/opt/pulse
+ExecStart=/opt/pulse/pulse.sh
+StandardOutput=inherit
+StandardError=inherit
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
