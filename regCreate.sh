@@ -18,7 +18,7 @@
 AGENTBINPATH="/opt/vmware/iotc-agent/bin/"
 TEMPLATE=Master-Gateway-Template
 GATEWAY=UbuntuVM-Gateway-001
-PULSEINSTANCE=iotc009.vmware.com
+PULSEINSTANCE=[Enter Pulse Instance]
 SERIAL=12345
 
 
