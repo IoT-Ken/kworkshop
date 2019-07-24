@@ -1,0 +1,16 @@
+package:
+    name: Onboard
+    description: Onboard Gateway
+    version: 1.0.0
+    headlessExecution: true
+    os: noos 
+    architecture: noarch
+    manifest:
+        lifecycle:
+            -   phase: execute
+                action: onboard.sh
+
+    attachments:
+        -   path: onboard.sh
+        
+
