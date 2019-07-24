@@ -18,7 +18,7 @@
 ## Set Variables
 ################################################################################
 MasterTemplateName=Master-Gateway-Template
-PULSEINSTANCE=iotc009.vmware.com
+PULSEINSTANCE=[Enter Pulse Instance]
 SubOrgID=7ef420af-2e9e-4a53-8658-b0efcae98cde
 SubOrgTemplateName=Invista-Gateway-Template
 
